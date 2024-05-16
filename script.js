@@ -50,7 +50,7 @@ function validateMsg() {
     if (msg.length == 0) {
         msgError.innerHTML = 'Atleast 30 charcters are required';
         return false;
-    } if (msg.length < 30) {
+    }else if (msg.length < 30) {
         msgError.innerHTML = `Minimum ${30 - msg.length} is required`;
         return false;
     }
@@ -66,4 +66,5 @@ function validateSubmit() {
         setTimeout(() => { submitError.style.display = 'none'; }, 3000);
         return false;
     }
+    return true;
 }
