@@ -66,5 +66,4 @@ function validateSubmit() {
         setTimeout(() => { submitError.style.display = 'none'; }, 3000);
         return false;
     }
-    return true;
 }
